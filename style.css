@@ -1,0 +1,141 @@
+
+
+/* Variable Declaration (removed in CSS) */
+/* $no_algos: 6; */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+body {
+    background-color:white; /* Changed background color to black */
+    color: rgb(12, 208, 247);
+}
+
+nav {
+    background-color:#5e5e5e;
+    display: grid;
+    grid-template-columns: 30% 60%;
+    column-gap: 10%;
+    padding: 0% 5%;
+}
+
+nav .array-inputs {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    place-content: center;
+    padding: 5% 0%;
+}
+
+nav .array-inputs #a_size,
+nav .array-inputs #a_speed {
+    padding: 5% 0%;
+}
+
+nav .array-inputs #a_generate {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 20px 0% 0% 0%;
+    padding-left: 2px;
+}
+
+nav .array-inputs #a_generate:hover {
+    cursor: pointer;
+   
+}
+
+nav .header_right {
+    display: flex;
+    flex-direction: column;
+}
+
+nav .header_right .nav-heading {
+    display: inline-block;
+    font-size: xxx-large;
+    padding: 3% 0%;
+}
+
+nav .header_right .algos {
+    display: flex; /* Changed from grid to flex */
+    justify-content: space-around; /* Adjust spacing between buttons */
+    padding: 2% 0%;
+}
+
+nav .header_right .algos button {
+    background-color: transparent;
+    border: none;
+    border-radius: none;
+    color: white;
+    outline: none;
+    padding: px 0%;
+    font-size: x-large;
+    margin: 0 5px; /* Add margin to create space between buttons */
+}
+
+nav .header_right .algos button:hover {
+    border: none;
+    cursor: pointer;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+section .Complexity_Containers {
+    margin-top: 20%;
+}
+
+section .Complexity_Containers .Pair_Definitions {
+    margin-top: 20%;
+}
+
+section .Complexity_Containers .Pair_Definitions p {
+    display: inline;
+}
+
+section .Complexity_Containers .Pair_Definitions p.Sub_Heading {
+    font-size: medium;
+    text-transform: none;
+}
+
+section #Info_Cont1,
+section #Info_Cont2 {
+    padding: 20% 10%;
+}
+
+section #Info_Cont1 h3,
+section #Info_Cont2 h3 {
+    text-decoration: underline;
+}
+
+#array_container {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+}
+
+.hide {
+    display: none;
+}
+
+/* Add these styles to set the color and background of the time and space complexity sections */
+.time-space-complexity {
+    color: white;
+    background-color: black;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Add styles to make the text within the complexity sections bold */
+.time-space-complexity p {
+    font-weight: bold;
+}
+
